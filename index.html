@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Templete</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="#" class="logo">pbs</a>
+        <ul class="navigation">
+          <li><a href="#service">Service</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><i class="fa fa-moon-o dark" aria-hidden="true"></i></li>
+        </ul>
+      </header>
+      <section class="banner" id="banner">
+        <div class="content">
+          <h2>
+            Pramesh<br />
+            Shrestha
+          </h2>
+          <p>
+            Freelance Visual Product Designer and <br />Developer based in
+            Butwal,Nepal.
+          </p>
+          <button class="button">Hire Me</button>
+        </div>
+        <div class="hero_image"></div>
+        <div id="right_circle"></div>
+        <div class="icon">
+          <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+          <i class="fa fa-dribbble fa-lg" aria-hidden="true"></i>
+          <i class="fa fa-behance fa-lg" aria-hidden="true"></i>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    const dark = document.querySelector(".dark");
+    dark.addEventListener("click", function () {
+      document.body.classList.toggle("dark-theme");
+    });
+  </script>
+</html>

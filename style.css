@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-height: 100vh;
+}
+body {
+  background-color: white;
+  color: black;
+}
+body.dark-theme {
+  background-color: black;
+  color: red;
+}
+body.dark-theme .navigation li a {
+  background-color: black;
+  color: white;
+}
+body.dark-theme .content h2 {
+  color: #fff;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  font-weight: 700;
+  color: #7f6de2;
+  font-size: 2em;
+  text-decoration: none;
+  margin-left: 80px;
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+  margin-right: 80px;
+}
+header .navigation li {
+  list-style-type: none;
+  padding: 0 15px;
+}
+header .navigation li a {
+  text-decoration: none;
+  color: #5a537d;
+  font-weight: 1000;
+  font-size: 1em;
+}
+.banner {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+.banner .content {
+  max-width: 800px;
+  margin: 40px 0 0 80px;
+  line-height: 1.4;
+}
+
+.banner .content h2 {
+  font-size: 4em;
+  color: #120845;
+}
+.banner .content p {
+  font-size: 1.4em;
+  color: #605b7a;
+  margin-top: 10px;
+}
+.button {
+  background: #7562e0;
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 25px;
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: none;
+  outline: none;
+  margin-top: 20px;
+}
+#banner.button:hover {
+  background: transparent;
+}
+.hero_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  background-image: url(images/me.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 70% 40%;
+  z-index: 1;
+}
+#right_circle {
+  background-color: #7562e0;
+  width: 80vw;
+  height: 80vw;
+  position: absolute;
+  bottom: -100%;
+  right: -40%;
+  border-radius: 100%;
+}
+
+.icon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 150px;
+  color: #cdc5f4;
+  height: 150px;
+  justify-content: space-around;
+}
