@@ -7,11 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "upload": "surge --project ./ --domain pramesh.surge.sh"
   },
-  "git": {
-    "scripts": {
-      "pre-push": "npm run upload"
-    }
-  },
+  "pre-push": [
+    "upload"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PrameshShrestha508/Hero_templete.git"
@@ -22,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/PrameshShrestha508/Hero_templete/issues"
   },
-  "homepage": "https://github.com/PrameshShrestha508/Hero_templete#readme"
+  "homepage": "https://github.com/PrameshShrestha508/Hero_templete#readme",
+  "devDependencies": {
+    "pre-push": "^0.1.2"
+  }
 }
