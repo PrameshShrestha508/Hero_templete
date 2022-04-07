@@ -12,17 +12,31 @@ body {
   background-color: white;
   color: black;
 }
+
+/* Dark Theme setup */
 body.dark-theme {
   background-color: black;
-  color: red;
+  color: #fff;
 }
 body.dark-theme .navigation li a {
-  background-color: black;
-  color: white;
+  color: #5a537d;
 }
 body.dark-theme .content h2 {
   color: #fff;
 }
+body.dark-theme .projects_title {
+  color: #fff;
+}
+body.dark-theme .card-body .card-title {
+  color: #fff;
+}
+body.dark-theme .card-body .card-text {
+  color: #fff;
+}
+body.dark-theme header.sticky .dark {
+  color: red;
+}
+/* Dark theme end */
 
 header {
   position: relative;
@@ -55,6 +69,12 @@ header .navigation li a {
   font-weight: 1000;
   font-size: 1em;
 }
+header.sticky {
+  background: #f9f9f9;
+  padding: 10px 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
 .banner {
   position: relative;
   height: 90vh;
@@ -122,4 +142,69 @@ header .navigation li a {
   color: #cdc5f4;
   height: 150px;
   justify-content: space-around;
+}
+.projects {
+  margin: 30px 0 30px 0;
+}
+
+.projects_title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #120845;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: #7562e0;
+  text-decoration-style: double;
+}
+.projects_box {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: space-around;
+}
+.projects .projects_box .card {
+  width: 100%;
+  height: 80vh;
+  background: #7562e0;
+  text-align: center;
+  border-radius: 3px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card-img-top {
+  height: 200px;
+  width: 100%;
+}
+.card-text,
+.card-title {
+  color: #120845;
+}
+
+footer {
+  background: #7562e0;
+}
+footer p {
+  text-align: center;
+  color: #cdc5f4;
+}
+
+@media (max-width: 1000px) {
+  .banner .content h2 {
+    color: #120845;
+  }
+  .projects_box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .card {
+    margin: 10px 0;
+  }
+  .hero_image {
+    z-index: -1;
+    opacity: 0.8;
+  }
 }

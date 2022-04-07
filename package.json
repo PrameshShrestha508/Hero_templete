@@ -1,0 +1,26 @@
+{
+  "name": "hero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "surge --project ./ --domain pramesh.surge.sh"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "npm run upload"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrameshShrestha508/Hero_templete.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrameshShrestha508/Hero_templete/issues"
+  },
+  "homepage": "https://github.com/PrameshShrestha508/Hero_templete#readme"
+}
