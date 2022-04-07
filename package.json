@@ -7,9 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "upload": "surge --project ./ --domain pramesh.surge.sh"
   },
-  "pre-push": [
-    "upload"
-  ],
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain pramesh.surge.sh"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PrameshShrestha508/Hero_templete.git"
